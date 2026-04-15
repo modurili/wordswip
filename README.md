@@ -1,2 +1,5 @@
 # wordswip
 英単語学習を無限スクロール体験に変換し、スワイプするだけで自然に記憶させるアプリ
+
+## 🌐サイトURL
+https://modurili.github.io/wordswip/
