@@ -9,7 +9,7 @@
 <title>WordSwipe</title>
 <link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Literata:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Syne:wght@700;800&family=Literata:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg:#0a0a0a; --surface:#141414; --surface2:#1e1e1e;
@@ -57,7 +57,16 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(
 #face-back{opacity:0;pointer-events:none;padding:28px;justify-content:center;background:var(--surface);}
 #face-back.show{opacity:1;pointer-events:all;}
 #face-front.hide{opacity:0;pointer-events:none;}
-#card-word{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(34px,10vw,68px);
+#card-word {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: clamp(34px, 10vw, 68px);
+  letter-spacing: normal;
+  color: var(--text);
+  text-align: center;
+  line-height: 1.2;
+  word-break: break-word;
+}
   letter-spacing:-0.01em;color:var(--text);text-align:center;line-height:1.05;word-break:break-word;}
 #hint-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;
   justify-content:center;background:rgba(0,0,0,0.85);border-radius:var(--radius);
